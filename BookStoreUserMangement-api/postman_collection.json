@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "53aefef6-4ef1-4f07-b24d-7d704e36a312",
+		"name": "BookStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9001/users",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save-1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Vaidya\",\n    \"Email\":\"Vaidya@Bookstore.com\",\n    \"City\":\"Boston\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9001/save",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put/id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Akash\",\n    \"email\":\"Akash@Bookstore.com\",\n    \"city\":\"Chennai\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9001/update/6",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"update",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete/id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9001/delete/7",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"delete",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
